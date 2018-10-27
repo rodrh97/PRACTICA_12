@@ -17,19 +17,19 @@
 				$enlacesController = "index";
 			}
 
-			$respuesta = new EnlacesPaginas();
+			$respuesta = EnlacesPaginas::enlacesPaginasModel($enlacesController);
 
-			include $respuesta->enlacesPaginasModel($enlacesController);
+			include $respuesta;
 		}
 
 		public function login(){
-			if(isset($_POST['usuario'])&&isset($_POST['contraseña'])){
+			if(isset($_POST['usuario'])&&isset($_POST['password'])){
 
 				$usuario = $_POST['usuario'];
-				$contraseña = $_POST['contraseña'];
+				$password = $_POST['password'];
 				$log = new Datos();
 
-				$r = $log->Iniciar_Sesion($usuario,$contraseña);
+				$r = $log->Iniciar_Sesion($usuario,$password);
 				if($r){
 					$_SESSION['usuario'] = $r['nombre_usuario'];
 					header("location:plantilla.php");

@@ -5,11 +5,11 @@
 			//validar 
 			if($enlacesModel=="verProductos"){
 				//mostramos el URL concatenado con $enlacesModel
-				$module = "Vistas/Paginas/".$enlacesModel.".php";
+				$module = "Paginas/".$enlacesModel.".php";
 			}
 			//validar una lista blanca
 			else{
-				$module = "Vistas/Paginas/inicio.php";		
+				$module = "Paginas/inicio.php";		
 			}
 			return $module;
 		}

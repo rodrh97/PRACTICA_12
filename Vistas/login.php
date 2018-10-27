@@ -52,7 +52,7 @@
                                     <span class="md-line"></span>
                                 </div>
                                 <div class="input-group">
-                                    <input type="password" class="form-control" placeholder="Contraseña" name="contraseña" required>
+                                    <input type="password" class="form-control" placeholder="Contraseña" name="password" required>
                                     <span class="md-line"></span>
                                 </div>
                                 
